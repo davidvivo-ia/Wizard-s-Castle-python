@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wizards-castle"
+version = "1.0.0"
+description = "A modern Python port of Joseph R. Power's 1980 BASIC roguelike The Wizard's Castle."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [{ name = "davidvivo-ia" }]
+keywords = ["roguelike", "retro", "text-adventure", "basic", "1980"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment :: Role-Playing",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+wizards-castle = "wizards_castle.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/davidvivo-ia/wizard-s-castle-python"
+"Decoded original" = "http://maizure.org/projects/decoded-the-wizards-castle/index.html"
+"IF Archive" = "https://www.ifarchive.org/indexes/if-archive/games/source/basic/"
+
+[tool.setuptools.packages.find]
+include = ["wizards_castle*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
