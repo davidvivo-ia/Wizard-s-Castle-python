@@ -21,6 +21,23 @@ roguelikes en BASIC.
 
 ## Instalación rápida
 
+### Arranque "doble-clic" (lo más fácil)
+
+| Sistema | Doble-clic en | Resultado |
+| --- | --- | --- |
+| Windows | `run.bat` | Instala dependencias si hace falta y lanza la TUI. |
+| macOS / Linux | `./run.sh` | Igual. |
+| Cualquiera | `python run.py` | Lanzador 100 % Python sin depender de `uv`. |
+
+Estos scripts detectan automáticamente si tienes `uv` instalado (lo
+prefieren porque es más rápido) y, si no, caen a `pip install -e .` y
+arrancan la CLI.
+
+Para pasar opciones: `run.bat --demo --seed 42`, `./run.sh play --classic`,
+`python run.py analyze --seed 7`.
+
+### Instalación manual con uv (recomendada para desarrollo)
+
 ```bash
 git clone <repo>
 cd Wizard-s-Castle-python
