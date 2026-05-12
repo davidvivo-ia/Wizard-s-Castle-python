@@ -90,6 +90,7 @@ ignore = [
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = ["ANN", "PLR2004", "S101", "PT011"]
 "src/wizards_castle/__main__.py" = ["T201"]
+"run.py" = ["PLC0415", "T201", "S603", "S607"]  # lazy bootstrap launcher
 
 [tool.ruff.lint.flake8-tidy-imports]
 ban-relative-imports = "all"
