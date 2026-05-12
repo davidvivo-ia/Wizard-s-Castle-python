@@ -1,0 +1,41 @@
+/* Wizard's Castle TUI — tema "ámbar sobre pergamino" */
+
+Screen {
+    background: #0E1014;
+    color: #E6D9B8;
+}
+
+Header {
+    background: #1A1D24;
+    color: #FFB347;
+}
+
+Footer {
+    background: #1A1D24;
+}
+
+#map {
+    width: 40;
+    border: round #7A6F58;
+    padding: 1 2;
+    background: #0E1014;
+}
+
+#status {
+    width: 1fr;
+    border: round #7A6F58;
+    padding: 1 2;
+    background: #0E1014;
+}
+
+#log {
+    height: 12;
+    border: round #7A6F58;
+    padding: 0 1;
+    background: #0E1014;
+}
+
+Input {
+    border: round #FFB347;
+    background: #1A1D24;
+}
